@@ -14,10 +14,14 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
+    margin-top: 0;
 }
 img {
     vertical-align: bottom;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
 }
 ul {
     margin: 0;
@@ -54,7 +58,7 @@ header {
     margin: 0 20px;
     font-size: 20px;
     list-style: none;
-    font-family: 'Bitter', serif;
+    /*font-family: 'Bitter', serif;*/
 }
 .global-nav li a {
     color: #ffffff;
@@ -66,11 +70,11 @@ header {
 }
 #wrap {
     clear: both;
-    /*    width: 960px;
-    margin: 0 auto;*/
-    background-color: #ffffff;
-    margin-top: 220px;
-    padding: 35px 0;
+}
+.content {
+    width: 960px;
+    margin: 0 auto;
+    /*  padding: 35px 0;*/
 }
 footer {
     text-align: center;
@@ -81,8 +85,11 @@ footer {
 footer small {
     font-size: 12px;
 }
+
+/*index*/
+
 #index h1 {
-    font-size: 90px;
+    font-size: 100px;
     line-height: 1;
     color: #ffffff;
     font-family: 'Bitter', serif;
@@ -120,21 +127,34 @@ footer small {
 }
 #index {
     background-image: url(../images/bg-index-b.jpg);
+    /**/
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     -webkit-background-size: cover;
     background-size: cover;
 }
+
+/*about*/
+
 #about {
-    background-image: url(../images/bg-portfolio.jpg);
+    background-image: url(../images/bg-about.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: fixed;
     -webkit-background-size: 100% auto;
     background-size: 100% auto;
 }
-.main-center {
+#wrap {
+    clear: both;
+    background-color: #ffffff;
+    margin-top: 220px;
+    padding: 35px 0;
+}
+.main
+/*-center*/
+
+{
     width: 940px;
     margin: 0 auto;
 }
@@ -181,11 +201,8 @@ section {
     padding: 12px 0 12px 40px;
     border: 1px solid #cccccc;
 }
-table {
-    border-spacing: 0;
-    border-collapse: collapse;
-}
 #index #wrap {
+    /**/
     background-color: transparent;
     margin-top: 0;
     padding: 0;
@@ -204,6 +221,9 @@ table {
     text-align: left;
     background-color: transparent;
 }
+
+/*portfolio*/
+
 #portfolio {
     background-image: url(../images/bg-portfolio.jpg);
     background-repeat: no-repeat;
@@ -237,8 +257,11 @@ table {
 a img:hover {
     opacity: 0.8;
 }
+
+/*photograph*/
+
 #photograph {
-    background-image: url(../images/bg-portfolio.jpg);
+    background-image: url(../images/bg-photograph.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: fixed;
@@ -253,6 +276,9 @@ a img:hover {
 #photograph .photograph-list li:nth-child(3n) {
     margin-right: 0;
 }
+
+/*video*/
+
 #video {
     background-image: url(../images/bg-video.jpg);
     background-repeat: no-repeat;
@@ -261,6 +287,9 @@ a img:hover {
     -webkit-background-size: 100% auto;
     background-size: 100% auto;
 }
+
+/*contact*/
+
 #contact {
     background-image: url(../images/bg-contact.jpg);
     background-repeat: no-repeat;
@@ -282,6 +311,8 @@ a img:hover {
     padding-left: 30px;
 }
 #contact .access iframe {
+    width: 420px;
+    /**/
     float: right;
 }
 #contact .form {
@@ -311,6 +342,8 @@ a img:hover {
 }
 #contact .form .type {
     width: 180px;
+    height: 30px;
+    /**/
 }
 #contact .form .message {
     width: 660px;
@@ -341,17 +374,17 @@ a img:hover {
     margin: 20px 0 0 165px;
 }
 @media screen and (max-width:600px) {
-    /*画面サイズ750pxの場合*/
+    /*スマホ画面サイズ600pxの場合*/
     body {
         font-size: 3.5vw;
-        #index {
-            background-image: url(../images/bg-index-b.jpg);
-            background-repeat: no-repeat;
-            background-position: center top;
-            background-attachment: fixed;
-            -webkit-background-size: 100% auto;
-            background-size: 100% auto;
-        }
+    }
+    #index {
+        background-image: url(../images/bg-index-b.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: fixed;
+        -webkit-background-size: 100% auto;
+        background-size: 100% auto;
     }
     h1 {
         font-size: 7.2vw;
@@ -360,13 +393,15 @@ a img:hover {
         font-size: 6vw;
     }
     header {
-        width: auto;
-        margin: 0 5%;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
     }
     .logo {
         float: none;
-        margin-top: 60px;
+        margin: 30px 10px 30px 0;
         text-align: center;
+        width: 100%;
     }
     .global-nav {
         float: none;
@@ -379,22 +414,20 @@ a img:hover {
         margin: 0 8px;
     }
     #wrap {
-        margin-top: 40px;
+        margin-top: 0;
         padding: 35px 0 0;
     }
     .content {
         width: 100%;
     }
-    .main {
+    .main,
+    .main-center {
         float: none;
         width: auto;
         margin: 0 5%;
     }
     h2 img {
         max-width: 100%;
-    }
-    #portfolio {
-        background-image: url(../images/bg-portfolio-sp.jpg)
     }
     .sidebar {
         width: auto;
@@ -403,5 +436,126 @@ a img:hover {
         padding: 30px 10% 10px;
         background-color: #f7f6f4;
         list-style: none;
+    }
+    /*index*/
+    #index h1 {
+        font-size: 32px;
+        line-height: 1;
+        color: #ffffff;
+        font-family: 'Bitter', serif;
+        margin-bottom: 50px;
+    }
+    #index .content {
+        margin-top: 5px;
+    }
+    #index p {
+        font-size: 16px;
+        font-family: 'Bitter', serif;
+        color: #ffffff;
+    }
+    .bth a {
+        background-color: #009cd3;
+        color: #ffffff;
+        font-size: 20px;
+        font-family: 'Bitter', serif;
+        width: 185px;
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        margin: 20px auto;
+        border-radius: 5px;
+        border: 3px solid #009cd3;
+    }
+    .bth a:hover {
+        text-decoration: none;
+        background-color: #ffffff;
+        color: #009cd3;
+    }
+    #index footer {
+        width: 960px;
+        margin: 150px auto 0 auto;
+        text-align: left;
+    }
+    #index {
+        background-image: url(../images/bg-index-b.jpg);
+        /**/
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    /*portfolio*/
+    #portfolio {
+        background-image: url(../images/bg-portfolio-sp.jpg)
+    }
+    #photograph .photograph-list li {
+        float: none;
+        margin-top: 5%;
+        text-align: center;
+    }
+    /*about*/
+    #about .profile-text {
+        width: 100%;
+    }
+    #about img {
+        width: 100%;
+    }
+    #about .career td {
+        width: 660px;
+        padding: 12px 0 12px 12px;
+        border: 1px solid #cccccc;
+    }
+    /*video,short-film*/
+    #video iframe,
+    #short-film iframe {
+        width: 340px;
+        height: 192px;
+    }
+    /*contact*/
+    #contact .access iframe {
+        width: 340px;
+        margin: 2.5vw auto;
+    }
+    #contact .form {
+        padding: 2%;
+    }
+    #contact .form dl dt {
+        font-size: 16px;
+        margin-left: 10px 0;
+    }
+    #contact .form dl dd {
+        float: none;
+        clear: both;
+        margin-left: 12px;
+    }
+    #contact .form .email {
+        width: 240px;
+        height: 30px;
+    }
+    #contact .form .type {
+        font-size: 16px;
+        width: auto;
+        height: 40px;
+        border: 1px solid #dddddd;
+    }
+    #contact .form .message {
+        width: 240px;
+        height: 150px;
+    }
+    #contact .form button {
+        background-color: #009cd3;
+        color: #ffffff;
+        font-size: 20px;
+        width: 120px;
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 5px;
+        border: 3px solid #009cd3;
+        margin-left: 2.5vw;
+    }
+    #contact .form .attention {
+        margin: 20px 0 0 2.5vw;
     }
 }
