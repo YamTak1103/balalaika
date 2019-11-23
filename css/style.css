@@ -119,7 +119,7 @@ footer small {
     text-align: left;
 }
 #index {
-    background-image: url(../images/bg-index-b.JPG);
+    background-image: url(../images/bg-index-b.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -345,7 +345,7 @@ a img:hover {
     body {
         font-size: 3.5vw;
         #index {
-            background-image: url(../images/bg-index-b.JPG);
+            background-image: url(../images/bg-index-b.jpg);
             background-repeat: no-repeat;
             background-position: center top;
             background-attachment: fixed;
