@@ -127,7 +127,6 @@ footer small {
 }
 #index {
     background-image: url(../images/bg-index-b.jpg);
-    /**/
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -202,7 +201,6 @@ section {
     border: 1px solid #cccccc;
 }
 #index #wrap {
-    /**/
     background-color: transparent;
     margin-top: 0;
     padding: 0;
@@ -373,18 +371,10 @@ a img:hover {
 #contact .form .attention {
     margin: 20px 0 0 165px;
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:750px) {
     /*スマホ画面サイズ600pxの場合*/
     body {
         font-size: 3.5vw;
-    }
-    #index {
-        background-image: url(../images/bg-index-b.jpg);
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-attachment: fixed;
-        -webkit-background-size: 100% auto;
-        background-size: 100% auto;
     }
     h1 {
         font-size: 7.2vw;
@@ -475,12 +465,11 @@ a img:hover {
     }
     #index footer {
         width: auto;
-        text-align: left;
+        text-align: center;
         margin: 0 7.5vw;
     }
     #index {
         background-image: url(../images/bg-index-b.jpg);
-        /**/
         background-repeat: no-repeat;
         background-position: center center;
         background-attachment: fixed;
@@ -496,11 +485,10 @@ a img:hover {
         margin-top: 5%;
         text-align: center;
     }
-    /*about*/
-    #about .profile-text {
-        width: 100%;
+    #photograph .photograph-list li:nth-child(3n) {
+        margin-right: 5%;
     }
-    #about img {
+    #about .profile-text {
         width: 100%;
     }
     #about .career td {
