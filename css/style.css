@@ -200,6 +200,14 @@ section {
     padding: 12px 0 12px 40px;
     border: 1px solid #cccccc;
 }
+#index {
+    background-image: url(../images/bg-index-b.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
 #index #wrap {
     background-color: transparent;
     margin-top: 0;
@@ -310,7 +318,6 @@ a img:hover {
 }
 #contact .access iframe {
     width: 420px;
-    /**/
     float: right;
 }
 #contact .form {
@@ -371,7 +378,7 @@ a img:hover {
 #contact .form .attention {
     margin: 20px 0 0 165px;
 }
-@media screen and (max-width:750px) {
+@media screen and (max-width:812px) {
     /*スマホ画面サイズ600pxの場合*/
     body {
         font-size: 3.5vw;
@@ -478,15 +485,34 @@ a img:hover {
     }
     /*portfolio*/
     #portfolio {
-        background-image: url(../images/bg-portfolio-sp.jpg)
+        background-image: url(../images/bg-portfolio-sp.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: fixed;
+        -webkit-background-size: auto auto;
+        background-size: auto auto;
+    }
+    /*photograph*/
+    #photograph {
+        background-image: url(../images/bg-photograph.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: fixed;
+        -webkit-background-size: auto auto;
+        background-size: auto auto;
     }
     #photograph .photograph-list li {
-        float: none;
-        margin-top: 5%;
-        text-align: center;
+        float: left;
+        margin-bottom: 0 auto 15px;
     }
-    #photograph .photograph-list li:nth-child(3n) {
-        margin-right: 5%;
+    /*about*/
+    #about {
+        background-image: url(../images/bg-about.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: fixed;
+        -webkit-background-size: auto auto;
+        background-size: auto auto;
     }
     #about .profile-text {
         width: 100%;
@@ -497,12 +523,38 @@ a img:hover {
         border: 1px solid #cccccc;
     }
     /*video,short-film*/
+    #video {
+        background-image: url(../images/bg-video.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: fixed;
+        -webkit-background-size: auto auto;
+        background-size: auto auto;
+    }
     #video iframe,
     #short-film iframe {
-        width: 340px;
-        height: 192px;
+        display: block;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
     }
     /*contact*/
+    #contact {
+        background-image: url(../images/bg-contact.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: fixed;
+        -webkit-background-size: auto auto;
+        background-size: auto auto;
+    }
+    #contact .access iframe {
+        width: 420px;
+        float: right;
+    }
+    #contact .access table th,
+    #contact .access table td {
+        padding-left: 5px;
+    }
     #contact .access iframe {
         width: 340px;
         margin: 2.5vw auto;
@@ -530,7 +582,8 @@ a img:hover {
         border: 1px solid #dddddd;
     }
     #contact .form .message {
-        width: 240px;
+        width: /*240px*/
+        90%;
         height: 150px;
     }
     #contact .form button {
@@ -543,10 +596,10 @@ a img:hover {
         line-height: 50px;
         border-radius: 5px;
         border: 3px solid #009cd3;
-        margin-left: 2.5vw;
+        margin: 0 auto;
+        ;
     }
     #contact .form .attention {
         margin: 20px 0 0 2.5vw;
     }
-    
 }
